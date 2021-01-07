@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: ibmplexmono;
+    src: url(./fonts/IBMPlexMono-Regular.ttf); 
+}
+@font-face{
+    font-family: ibmplexsans;
+    src: url(./fonts/IBMPlexSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: ibmplexmono-Medium;
+    src: url(./fonts/IBMPlexMono-Medium.ttf);
+
+}
+
+@font-face{
+    font-family: ibmplexsans-bold;
+    src: url(./fonts/IBMPlexSans-Bold.ttf);
+}
+
+
+
+header{
+    /* width: 1440px; */
+    height: 44px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+     
+}
+
+#logo{
+    position: absolute;
+    margin-top: 0.4%;
+    margin-left: 2%;
+}
+
+.botonMenu{
+   display: block;
+   width: 18px;
+   height: 12px;
+   padding: 10px;
+   border-radius: 7px;
+   color: black;
+   cursor: pointer;
+   position: relative;
+   /* border: 1px solid black; */
+   margin-top: 0.3%;
+
+   margin-left: 85%;
+}
+
+.botonMenu span{
+   display: block;
+   width: 18px;
+   height: 2px;
+   background: black;
+   margin-top: 3px;
+}
+
+label{
+   cursor: pointer;
+}
+
+#menu-toggle{
+   display: none;
+}
+
+#trickMenu{
+   display: none;
+   background: white;
+   padding: 10px 0;
+   list-style: none;
+   margin-top: 1px;
+   width: 100%;
+   /* border: 1px solid black; */
+}
+
+#trickMenu li a{ 
+   position: relative;
+   display: block;
+   padding: 10px 0;
+   color: black;
+   width: 100%;
+   background: blue;
+   color: white;
+   text-decoration: none;
+   z-index: 1;
+}
+
+#menu-toggle:checked + #trickMenu{
+   display: block;
+}
+
+#contain{
+    display: grid;
+    /* border: 1px solid black; */
+}
+
+/* #contain > section{
+    border: 1px solid black;
+} */
+
+/* COMIENZA PORTADA */
+
+#portada{
+    margin-top: 29px;
+}
+
+#portada > h1{
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-left: 16px ;
+}
+
+#world{
+    text-decoration: line-through;
+}
+
+#portada > p{
+    margin-top: 16px;
+    margin-left: 16px ;
+    font-family: IBMPlexMono;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+#escritorio{
+    display: none;
+}
+
+#box_conoce{
+    width: 288px;
+    height: 48px;
+    background: #00F3BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+#box_conoce > p {
+    color: black;
+    font-family:IBMPlexMono-Medium;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* TERMINA PORTADA */
+
+/* COMIENZA EPISODIO */
+
+#episodios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    height: 1203.5px;   
+}
+
+h2{
+    
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+    align-self: flex-start;
+
+    margin-bottom: 21px;
+    margin-left: 30px;
+    
+}
+
+.iframe{
+    margin-top: -10px;
+    width: 298px; 
+    height: 245px;
+    border: none;
+}
+
+/* TERMINA EPISODIO */
+
+/* COMIENZA NOSOTROS */
+
+
+
+#phone{
+    width: 320px;
+    position: relative;
+    margin: 0 auto;
+    margin-top:-95px;
+}
+
+h3{
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+
+    width: 288px;
+    height: 84px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+
+#nosotros > p {
+    font-family: IBMPlexMono;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+
+    width: 288px;
+    height: 254px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+}
+
+/* TERMINA NOSOTROS */
+
+/* COMIENZA ENTREVISTAS */
+
+#entrevistas{
+    margin-bottom: 48px;
+}
+
+h4{
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+
+    margin-left: 16px;
+    margin-bottom: 14px;
+}
+
+#fotos_invitadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fotos_invitadas > img{
+    width: 320px;
+    height: 243px;
+    
+}
+
+/* TERMINA ENTREVISTAS */
+
+/* COMIENZA TOPICOS */
+
+#topicos{
+    display: flex;
+    flex-direction: column; 
+}
+
+h5{
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+#topicos > p{
+    font-family: IBMPlexSans-Bold;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+
+    margin-top: 13px ;
+    margin-bottom: 49px;
+}
+
+/* TERMINA TOPICOS */
+
+/* COMIENZA NOVEDADES */
+
+#novedades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 341px;
+    clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+h6{
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    width: 288px;
+    height: 126px;
+}
+
+#box_novedades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 48px;
+    background: #00F3BB;
+    margin-top: 49px;
+}
+
+#box_novedades > p {
+    font-family: IBMPlexMono-Medium;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    
+}
+
+/* TERMINA NOVEDADES */
+
+/* COMIENZA FOOTER */
+
+#footer{
+    /* border: 1px solid black; */
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconos_footer{
+    margin-top: 16px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#iconos_footer > a{
+color: black;
+}
+
+/* TERMINA FOOTER */
+
+@media screen and (min-width:600px) {
+
+    header{
+        /* border: 1px solid black; */
+        width: 99%;
+        height: 80px;
+        /* display: flex; */
+        
+    }
+
+    #logo{
+        position: absolute;
+        margin-top: 20px;
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .botonMenu{
+        display: none;
+    }
+
+    #trickMenu{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0; 
+
+    }
+
+    #trickMenu > li a{
+        position: relative;
+        margin-top: 20px;
+        background: none;
+        padding-right: 30px;
+
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        
+    }
+
+    #trickMenu > li a:hover{
+        font-family: IBMPlexMono-Medium;
+        font-size: 16px;
+        color: #00F3BB;
+        letter-spacing: 0;
+        line-height: 28px;
+        text-decoration: line-through;
+
+    }
+
+    #trickMenu > li a:active{
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: rgba(6,10,36,0.56);
+        letter-spacing: 0;
+        line-height: 28px;
+        text-decoration: line-through;
+        
+        }
+
+    #contain{
+        width: 99%;
+        margin: 0 auto;
+    }
+
+    #portada{
+        margin-top: 120px;
+    }
+
+    #portada > h1{
+        font-family: IBMPlexSans;
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0;
+        margin-left: 200px;
+
+    }
+
+    #punto{
+        color: blue;
+    }
+
+    #mobile{
+        display: none;
+    }
+
+    #escritorio{
+        display: block;
+        width: 628px;
+        height: 48px;
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+
+    #portada > p {
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-left: 200px;
+        margin-bottom: 56px;
+    }
+
+    #box_conoce{
+        position: relative;
+        margin-left: 200px;
+        width: 226px;
+        height: 56px;
+    }
+
+    #box_conoce:hover{
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);;
+    }
+
+    #box_conoce > p:hover{
+        color: white;
+    }
+
+
+    #episodios{
+        display: unset;
+        /* display: flex; */
+        height: 1042.6px;
+        clip-path: polygon(0 14%, 100% 0%, 100% 87%, 0% 100%);
+
+    }
+
+    h2{
+        /* border: 1px solid black; */
+        margin-top: 160px;
+        margin-bottom: 26px;
+        margin-left: 200px;
+        font-family: IBMPlexSans;
+        font-size: 48px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        width: 209px;
+        height: 62px;
+
+    }
+
+    .iframe{
+        margin-left: 200px;
+        margin-bottom: 72px;
+        width: 584px;
+        height: 232px;
+    
+    }
+
+    #nosotros{
+        display: flex;
+        
+    }
+
+    #phone{
+        margin-top: -220px;
+        width: 457.6px;
+        margin-left:20% ;
+    }
+
+    h3{
+        font-family: IBMPlexSans;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        width: 399px;
+        height: 62px;
+
+        position: absolute;
+        margin-left: 50%;
+        
+    }
+
+    #nosotros > p {
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        width: 464px;
+        height: 204px;
+
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 65px;
+    }
+
+
+    h4{
+        font-family: IBMPlexSans;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0; 
+        margin-top: 64px;
+        margin-left: 200px;
+        margin-bottom: 36px;
+        width: 481px;
+        height: 62px;
+    }
+
+    #fotos_invitadas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    #fotos_invitadas > img{
+        width: 480px;
+        height: 364px;
+    }
+
+    #topicos{
+        display: unset;
+        height: 350px;
+    }
+
+    #topicos > img{
+        position: relative;
+        margin-left: 15%;
+        
+    }
+
+    h5{
+        font-family: IBMPlexSans;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        margin-left: 200px;
+        margin-bottom: 70px;
+    }
+
+    #topicos > p{
+        display: unset;
+        position: absolute;
+        margin-top: 120px;
+        margin-left: -9%;
+        
+    }
+
+    .bloque_parrafo1{
+        width: 220px;
+        height: 32px;
+    }
+
+    .bloque_parrafo2{
+        width: 220px;
+        height: 64px;
+    }
+
+    #novedades{
+        height: 518px;
+    }
+
+
+    h6{
+        font-family: IBMPlexSans;
+        font-size: 48px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        width: 692px;
+        height: 62px;
+    }
+
+    #box_novedades{
+        width: 345px;
+        height: 56px;
+    }
+
+    #box_novedades > p {
+        font-family: IBMPlexMono-Medium;
+        font-size: 18px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    #footer{
+        width: 99%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #footer > p {
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        padding-left: 150px;
+    }
+
+    #iconos_footer{
+        width: 10%; 
+        padding-right: 150px;
+
+    }
+
+    #iconos_footer > a{
+        font-size: 18px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        
+    }
+
+}
